@@ -1,0 +1,134 @@
+/// work on css 
+@import 'normalize'
+
+#wrapper
+  background-image linear-gradient(to right, 
+        #d0f0ff,
+        #d0f0ff 15%,
+        #78b5db 15%,
+        #78b5db 85%,
+        #d0f0ff 85%)  
+  h1 , p 
+    color white
+  h3 
+    font-family "Roboto"
+    
+header 
+  // background lightgray
+  padding-bottom 20px
+  h1 
+    text-align center
+    margin-top 0
+    padding-top 20px
+    font-family "Poiret One"
+    font-weight bold
+  article
+    width: 50%
+    margin auto 
+    p 
+      font-family "Poiret One"     
+      padding-bottom 5px
+    
+
+#app
+  width 100%
+.content
+  width 65%
+  padding 0
+  margin auto 
+  // display flex
+  p
+    font-family "Roboto"
+  li
+    list-style none
+    border-bottom solid 0.1px white // testing will remove when finished
+     
+        
+  li:first-child 
+    border-top solid 0.1px white
+    padding-top 10px
+    padding-bottom 20px 
+  li + li 
+    padding-bottom 20px   
+  li:last-child
+    padding-bottom 10px 
+    border-bottom none   
+
+  
+.blog_body
+  display none
+  
+  
+footer
+  width 100% 
+  height 10vh
+  background-color #d0f0ff
+  p
+    font-family "Poiret One"
+    margin-top 0
+    
+// button styling
+
+button
+  color #fff
+  background-color #6496c8
+  text-shadow: -1px 1px #417cb8
+  border: none
+button:hover
+  color lightblue
+  
+
+@media only screen and (max-device-width: 480px)
+  #wrapper 
+    height 100%
+    width: 100%
+  #app
+    width 100%
+  .content
+    display flex
+    flex-wrap wrap
+    justify-content flex-start
+    li
+      display flex
+      flex-wrap wrap
+      justify-content space-between
+      
+      margin 20px 0 20px 0
+      // border solid
+      width 45%
+      // flex-grow 1
+    li:second-child 
+      border-top solid 0.1px white
+  .title
+    white-space: nowrap; 
+    width: 12em; 
+    overflow: hidden;
+    text-overflow: ellipsis;   
+  .title , .blog_body
+    padding-right 5px
+  
+  
+      
+      
+          
+      
+    
+
+
+    
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

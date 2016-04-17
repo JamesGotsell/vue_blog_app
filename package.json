@@ -1,0 +1,28 @@
+{
+  "name": "vue_stuff",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "./node_modules/.bin/_mocha test/integrationTests/spec/*spec.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "express": "^4.13.4",
+    "normalize-styl": "^3.0.3",
+    "q": "latest",
+    "vue": "^1.0.21",
+    "vue-resource": "^0.7.0"
+  },
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-stylus": "^1.2.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "mocha": "*",
+    "should": "latest",
+    "sinon": "latest",
+    "supertest": "^1.1.0"
+  }
+}

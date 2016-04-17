@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> vue tech test</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="public/stylesheets/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+        <h1>Blog Post App</h1>
+          
+        </br>
+        <article>
+          <p>This is the Vice UK tech test, I've pulled json data from jsonplaceholder.typicode.com and displayed 10 blog post using the data binding library Vue.js. For styling I've used Stylus with grunt to compile into css file</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris condimentum tellus non diam venenatis rhoncus. Nullam est ligula, luctus sit amet ullamcorper vel, fringilla lacinia est. Maecenas sagittis, velit sit amet condimentum rutrum, sapien eros condimentum enim, sit amet aliquam sem nisl vitae torto 
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris condimentum tellus non diam venenatis rhoncus. Nullam est ligula, luctus sit amet ullamcorper vel, fringilla lacinia est. Maecenas sagittis, velit sit amet condimentum rutrum, sapien eros condimentum enim, sit amet aliquam sem nisl vitae torto 
+          </p>
+        </article>
+    </header>
+    <div id="app">
+        <ul class="content">
+            <li v-for="post in posts | limit 10">
+                <h3 class="title">{{ post.title }}</h3>
+                <p><span class='blog_body' track-by='$index'> {{ post.body }}</span></p>
+                <!-- <br/> -->
+                <button class="toogle1" v-on:click="toggle1($index)"><span>check out this blog</span></button>
+            </li>
+        </ul>
+    </div>
+    
+</div>
+<footer>
+<p><b>built by james</b></p>
+</footer>
+
+    <script src="node_modules/vue/dist/vue.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
